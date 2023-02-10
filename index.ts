@@ -12,8 +12,8 @@ function initMap(): void {
   const map = new google.maps.Map(
     document.getElementById('map') as HTMLElement,
     {
-      zoom: 19,
-      center: { lat: 18.5314, lng: 73.870999 },
+      zoom: 15,
+      center: { lat: 50.876716573971024, lng: 7.117400407987589 },
       mapTypeId: 'satellite',
     }
   );
@@ -25,8 +25,8 @@ function initMap(): void {
   const bounds = new google.maps.LatLngBounds(
     //new google.maps.LatLng(62.281819, -150.287132),
     //new google.maps.LatLng(62.400471, -150.005608)
-    new google.maps.LatLng(18.53093, 73.87049),
-    new google.maps.LatLng(18.53167, 73.871199)
+    new google.maps.LatLng(50.87742807469278, 7.117503404879245 ),
+    new google.maps.LatLng(50.8817340797749, 7.1231703703233515)
 
     // new google.maps.LatLng(18.531701985747137, 73.87053206061877),
     // new google.maps.LatLng(18.53109456918211, 73.87113337868803)
@@ -35,12 +35,12 @@ function initMap(): void {
   );
 
   new google.maps.Marker({
-    position: { lat: 18.53082, lng: 73.87049 },
+    position: { lat: 50.8817340797749, lng: 7.1231703703233515 },
     map,
     title: 'South West',
   });
   new google.maps.Marker({
-    position: { lat: 18.53167, lng: 73.871199 },
+    position: { lat: 50.87742807469278, lng: 7.117503404879245 },
     map,
     title: 'North East',
   });
@@ -55,7 +55,7 @@ function initMap(): void {
   //   title: 'South East',
   // });
   // The photograph is courtesy of the U.S. Geological Survey.
-  let image = '../images/Pune3.png';
+  let image = '../images/Mezzanine-1.png';
 
   /**
    * The custom USGSOverlay object contains the USGS image,
